@@ -23,7 +23,7 @@ export type CartItemsType =  CartItemType[]
 
 export  const shippingFormSchema = z.object({
   name : z.string().min(1 ,'name is required!') , 
-   email : z.email('invalid email format ').min(1 , 'email is required!') ,
+   email : z.string().email('invalid email format').min(1 , 'email is required!') ,
    phone : z.string().min(11 ,'phone must be between 7 and 11 digits!').regex(/^\d+$/ , 'phone must contain only numbers'),
    address : z.string().min(1 , ' address is required!')
    , city : z.string().min(1 , ' city is required!')

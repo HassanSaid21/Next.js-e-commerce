@@ -13,8 +13,9 @@ const PaymentForm = () => {
   })
   const router =  useRouter()
 
-  const handleShippingForm  : SubmitHandler<paymentFormInputs> = (data) =>{
-    
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const handleShippingForm  : SubmitHandler<paymentFormInputs> = (_data) =>{
+    // TODO: Process payment data
     router.push('/cart?step=3'  ,{scroll:false})
   }
   return (
@@ -33,7 +34,7 @@ const PaymentForm = () => {
          {errors.cardName && <p className='mb-4 text-red-600'>{errors.cardName.message} </p>}
         <label htmlFor="cardNumber" className='text-xs font-medium'>Card Number</label>
         <input 
-          type="cardNumber" 
+          type="text" 
           id="cardNumber" 
           {...register('cardNumber')}
           placeholder="4556-5468-7845-5456" 
