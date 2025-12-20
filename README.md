@@ -2,8 +2,8 @@
 
 A modern, full-stack e-commerce web application built with Next.js 15, featuring a complete shopping experience for clothing and apparel.
 
-![Next.js](https://img.shields.io/badge/Next.js-15.5.9-black)
-![React](https://img.shields.io/badge/React-19.1.0-blue)
+![Next.js](https://img.shields.io/badge/Next.js-15.4.5-black)
+![React](https://img.shields.io/badge/React-19.1.4-blue)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4-38bdf8)
 
@@ -24,8 +24,8 @@ A modern, full-stack e-commerce web application built with Next.js 15, featuring
 ## 🛠️ Technology Stack
 
 ### Frontend
-- **Next.js 15.5.9** - React framework with App Router
-- **React 19.1.0** - UI library
+- **Next.js 15.4.5** - React framework with App Router
+- **React 19.1.4** - UI library
 - **TypeScript** - Type-safe development
 - **Tailwind CSS 4** - Utility-first styling
 - **Lucide React** - Icon library
@@ -190,7 +190,7 @@ npm run start
 ## 🔐 Security
 
 This project has been updated to address security vulnerabilities:
-- Updated Next.js to v15.5.9 (fixes critical SSRF and RCE vulnerabilities)
+- Updated Next.js to v15.4.5 with latest security patches
 - All dependencies are up-to-date
 - Clerk handles authentication securely
 
