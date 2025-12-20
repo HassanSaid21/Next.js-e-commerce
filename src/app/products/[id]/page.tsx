@@ -19,7 +19,7 @@ import ProductInteractions from "../ProductInteractions";
 };
 
 const ProductPage =async ({
-  params,
+  params, // eslint-disable-line @typescript-eslint/no-unused-vars
   searchParams,
 }: {
   params: Promise<{ id: string }>;
