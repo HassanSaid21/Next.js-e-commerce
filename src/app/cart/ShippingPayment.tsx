@@ -13,7 +13,8 @@ const PaymentForm = () => {
   })
   const router =  useRouter()
 
-  const handleShippingForm  : SubmitHandler<paymentFormInputs> = () =>{
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const handleShippingForm  : SubmitHandler<paymentFormInputs> = (_data) =>{
     // TODO: Process payment data
     router.push('/cart?step=3'  ,{scroll:false})
   }
