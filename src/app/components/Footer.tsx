@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className=" flex gap-8 flex-col md:flex-row items-center md:items-start md:gap-0 md:justify-between  bg-gray-800 rounded-lg px-6 py-8">
       <div className="flex flex-col gap-4 items-center md:items-start">
         <Logo color="text-white" />
-        <p className="text-sm text-gray-400">© 2025 Trendlama.</p>
+        <p className="text-sm text-gray-400">© 2025 K-TREND.</p>
         <p className="text-sm text-gray-400">All rights reserved.</p>
       </div>
       <div className="flex flex-col gap-4 text-sm text-gray-400 items-center md:items-start">
