@@ -1,10 +1,7 @@
 import { clerkMiddleware } from '@clerk/nextjs/server';
 
+// Handle missing Clerk keys gracefully during build
 export default clerkMiddleware();
-  // const isPublicRoute = createRouteMatcher([
-  //   '/sign-in(.*)',
-  //   '/sign-up(.*)'
-  // ])
 
 export const config = {
   
