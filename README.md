@@ -216,6 +216,35 @@ This project has been updated to address security vulnerabilities:
 | `NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL` | Redirect after sign-in | No |
 | `NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL` | Redirect after sign-up | No |
 
+## 🚀 Deployment
+
+### Deploying to Vercel
+
+1. **Push your code to GitHub**
+
+2. **Import your repository on Vercel:**
+   - Go to [vercel.com](https://vercel.com)
+   - Click "New Project"
+   - Import your GitHub repository
+
+3. **Configure Environment Variables:**
+   - In your Vercel project settings, go to "Environment Variables"
+   - Add the required Clerk environment variables:
+     - `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY`
+     - `CLERK_SECRET_KEY`
+   - Add optional redirect URLs if needed
+
+4. **Deploy:**
+   - Click "Deploy"
+   - Vercel will automatically build and deploy your application
+
+**Important:** Make sure to set the `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` environment variable in your Vercel project settings before deploying. The build will fail without it.
+
+For other deployment platforms, make sure to:
+- Set all required environment variables before building
+- Use Node.js 18 or higher
+- Run `npm install --legacy-peer-deps` if needed
+
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
