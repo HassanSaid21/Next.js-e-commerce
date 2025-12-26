@@ -27,8 +27,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Get the publishable key from environment variables
+  // Using empty string as fallback allows build to succeed without crashing
+  // In production, the app should have this key set via environment variables
+  const publishableKey = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY || '';
+  
   return (
-    <ClerkProvider >
+    <ClerkProvider publishableKey={publishableKey}>
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
